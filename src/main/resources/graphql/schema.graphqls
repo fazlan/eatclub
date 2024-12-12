@@ -1,0 +1,24 @@
+type Menu {
+    id: ID!
+    title: String!
+    sections: [MenuSection]!
+}
+
+type MenuSection {
+    id: ID!
+    title: String!
+    description: String!
+    items: [MenuItem]!
+}
+
+type MenuItem {
+    id: ID!
+    title: String!
+    description: String!
+    imageURL: String!
+    price: Float!
+}
+
+type Query {
+    getRecentMenu(branchId: ID!): Menu
+}

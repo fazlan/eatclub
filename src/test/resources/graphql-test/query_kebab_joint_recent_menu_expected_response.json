@@ -1,0 +1,52 @@
+{
+    "data": {
+        "getRecentMenu": {
+            "id": "1",
+            "title": "Kebab Joint Menu",
+            "sections": [
+                {
+                    "id": "2",
+                    "title": "HSP",
+                    "description": "All HSP platters",
+                    "items": [
+                        {
+                            "id": "3",
+                            "title": "HSP",
+                            "description": "",
+                            "imageURL": "",
+                            "price": 12.9
+                        },
+                        {
+                            "id": "4",
+                            "title": "Meat Only Pack",
+                            "description": "",
+                            "imageURL": "",
+                            "price": 19.9
+                        }
+                    ]
+                },
+                {
+                    "id": "1",
+                    "title": "Mix Platters",
+                    "description": "All mixed platters",
+                    "items": [
+                        {
+                            "id": "1",
+                            "title": "Chicken Bowl",
+                            "description": "Greek salad served with chicken doner meat.",
+                            "imageURL": "",
+                            "price": 16.9
+                        },
+                        {
+                            "id": "2",
+                            "title": "Schnitzel Cold Pack",
+                            "description": "Served with bowl of Greek salad and schnitzel with two choices of sauces.",
+                            "imageURL": "",
+                            "price": 18.9
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

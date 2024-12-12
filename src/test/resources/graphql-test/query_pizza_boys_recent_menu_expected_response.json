@@ -1,0 +1,22 @@
+{
+    "data": {
+        "getRecentMenu": {
+            "id": "2",
+            "title": "Pizza Boys Menu",
+            "sections": [
+                {
+                    "id": "4",
+                    "title": "Pastas",
+                    "description": "Tasty pastas",
+                    "items": []
+                },
+                {
+                    "id": "3",
+                    "title": "Pizzas",
+                    "description": "Tasty pizzas",
+                    "items": []
+                }
+            ]
+        }
+    }
+}

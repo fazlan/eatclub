@@ -1,0 +1,18 @@
+query GetRecentMenu($branchId:ID!) {
+    getRecentMenu(branchId: $branchId) {
+        id,
+        title,
+        sections {
+            id
+            title
+            description
+            items {
+                id
+                title
+                description
+                imageURL
+                price
+            }
+        }
+    }
+}

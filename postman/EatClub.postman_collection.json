@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "338e4717-d0c6-41fc-885a-6d5119e37116",
+		"name": "EatClub",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27795564"
+	},
+	"item": [
+		{
+			"name": "REST",
+			"item": [
+				{
+					"name": "All Restaurants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v1/restaurants",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"restaurants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant Branches",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v1/restaurants/1/branches",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"restaurants",
+								"1",
+								"branches"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Restaurant ID 1 Branches",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/v1/restaurants/1/branches",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"restaurants",
+										"1",
+										"branches"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "GRAPHQL",
+			"item": [
+				{
+					"name": "Search Menu By Restaurant Branch ID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query MyQuery($branchId:ID!) {\n  getRecentMenu(branchId: $branchId) {\n    id,\n    title,\n    sections {\n      id\n      title\n      description\n      items {\n        id\n        title\n        description\n        imageURL\n        price\n      }\n    }\n  }\n}",
+								"variables": "{\n    \"branchId\" : 1\n}"
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
